@@ -1,0 +1,68 @@
+name: finik
+description: "A new Flutter project."
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+
+  flutter:
+
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+
+  get: ^4.6.6
+
+  intl: ^0.19.0
+
+  logger: ^2.0.2+1
+
+  flutter_native_splash: ^2.3.8
+
+  splash_view: ^2.0.1
+  smooth_page_indicator: ^1.1.0
+
+dev_dependencies:
+
+  flutter_test:
+
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/on_boarding_images/
+    - assets/logos/
+    - assets/icons/
+
+
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Thin.otf
+          weight: 100
+        - asset: assets/fonts/Inter-ExtraLight.otf
+          weight: 200
+        - asset: assets/fonts/Inter-Light.otf
+          weight: 300
+        - asset: assets/fonts/Inter-V.ttf
+          weight: 400
+        - asset: assets/fonts/Inter-Medium.otf
+          weight: 500
+        - asset: assets/fonts/Inter-SemiBold.otf
+          weight: 600
+        - asset: assets/fonts/Inter-Bold.otf
+          weight: 700
+        - asset: assets/fonts/Inter-ExtraBold.otf
+          weight: 800
+        - asset: assets/fonts/Inter-Black.otf
+          weight: 900

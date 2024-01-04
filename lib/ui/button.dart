@@ -6,15 +6,17 @@ class Button extends StatelessWidget {
     required this.backgroundColor,
     required this.text,
     required this.colorText,
+    this.onPressed,
   }) : super(key: key);
 
   final Color backgroundColor, colorText;
   final String text;
+  final VoidCallback? onPressed;
 
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      onPressed: () {},
+      onPressed: onPressed,
       style: TextButton.styleFrom(
         minimumSize: const Size(303, 0),
         padding: const EdgeInsets.all(15),

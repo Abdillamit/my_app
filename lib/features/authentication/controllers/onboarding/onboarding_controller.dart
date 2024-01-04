@@ -19,7 +19,7 @@ class OnBoardingController extends GetxController {
 
   void nextPage() {
     if (currentPageIndex.value == 4) {
-      Get.offAll(HomePage());
+      Get.offAll(const HomePage());
     } else {
       int page = currentPageIndex.value + 1;
       pageController.jumpToPage(page);

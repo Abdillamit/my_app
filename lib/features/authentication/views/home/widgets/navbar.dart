@@ -1,11 +1,13 @@
 import 'dart:ui';
 
+import 'package:finik/features/authentication/views/login/login.dart';
 import 'package:finik/ui/button.dart';
 import 'package:finik/utils/constants/colors.dart';
 import 'package:finik/utils/constants/image_strings.dart';
 import 'package:finik/utils/constants/sizes.dart';
 import 'package:finik/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class NavBar extends StatelessWidget {
   const NavBar({super.key});
@@ -112,7 +114,12 @@ class NavBar extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: ASizes.spaceBtwItems),
-                    const Button(
+                    Button(
+                      onPressed: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const Login(),
+                        ));
+                      },
                       backgroundColor: Color(
                         0xFFACF709,
                       ),

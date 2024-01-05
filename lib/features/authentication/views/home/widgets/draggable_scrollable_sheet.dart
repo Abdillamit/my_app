@@ -31,7 +31,9 @@ class DraggableScrollableSheetPage extends StatelessWidget {
                     child: const Column(
                       children: [
                         SizedBox(height: 50),
-                        Input(),
+                        Input(
+                          labelText: '',
+                        ),
                         SizedBox(height: ASizes.cardRadiusMd),
                         Text(ATexts.title1),
                         SizedBox(height: ASizes.cardRadiusLg),

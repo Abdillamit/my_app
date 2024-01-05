@@ -53,6 +53,7 @@ class ATexts {
   // Send the code again Texts
   static const String sendTheCodeAgainTitle1 = "Отправить код заного";
   static const String sendTheCodeAgainSubTitle1 = "сек";
+  static const String emailText = "Confirm your email address";
 
   // Loading  Texts
   static const String loadingTitle1 = "Проверка...";

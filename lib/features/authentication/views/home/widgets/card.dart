@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:finik/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 

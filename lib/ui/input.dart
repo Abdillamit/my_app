@@ -1,15 +1,29 @@
-import 'package:finik/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 
 class Input extends StatelessWidget {
-  const Input({super.key});
+  const Input({Key? key, required this.labelText, this.prefixIcon})
+      : super(key: key);
+
+  final String labelText;
+  final IconData? prefixIcon;
 
   @override
   Widget build(BuildContext context) {
-    return const TextField(
+    return TextField(
       decoration: InputDecoration(
-        labelText: ATexts.inputTitle1,
-        border: OutlineInputBorder(),
+        labelText: labelText,
+        labelStyle: const TextStyle(
+          color: Colors.grey,
+          fontSize: 13.0,
+          fontWeight: FontWeight.bold,
+        ),
+        prefixIcon: prefixIcon != null
+            ? Icon(
+                prefixIcon,
+                color: Colors.grey,
+              )
+            : null,
+        border: const OutlineInputBorder(),
       ),
     );
   }

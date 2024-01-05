@@ -66,3 +66,9 @@ flutter:
           weight: 800
         - asset: assets/fonts/Inter-Black.otf
           weight: 900
+
+    - family: Neue Machina
+      fonts:
+        - asset: assets/fonts/NeueMachina-Light.otf
+        - asset: assets/fonts/NeueMachina-Regular.otf
+        - asset: assets/fonts/NeueMachina-Ultrabold.otf

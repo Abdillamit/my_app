@@ -7,7 +7,6 @@ import 'package:finik/utils/constants/image_strings.dart';
 import 'package:finik/utils/constants/sizes.dart';
 import 'package:finik/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class NavBar extends StatelessWidget {
   const NavBar({super.key});
@@ -120,7 +119,7 @@ class NavBar extends StatelessWidget {
                           builder: (context) => const Login(),
                         ));
                       },
-                      backgroundColor: Color(
+                      backgroundColor: const Color(
                         0xFFACF709,
                       ),
                       text: ATexts.loginButtonTitle1,
